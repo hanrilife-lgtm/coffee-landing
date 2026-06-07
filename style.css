@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.5;
+    color: #fff;
+    background: #141414;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header{
+    background: transparent;
+    box-shadow: 0 3px 6px rgb(26, 24, 24);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+    color: #6f4e37;
+}
+
+nav a{
+    margin-left: 25px;
+    text-decoration: none;
+    color: #aa6e43;
+    font-weight: 500;
+}
+
+nav a:hover{
+    color:#f4883b;
+}
+
+.hero{
+    background: linear-gradient(135deg, #c1bdb8 0%, #c1b3a7 100%);
+    padding: 60px 0;
+}
+
+.hero-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.hero-text{
+    flex: 1;
+    color: #ab7a57;
+}
+
+.hero-text h1{
+    font-size: 48px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+
+.hero-text p{
+    font-size: 18px;
+    color:#5a3e2e;
+}
+
+.btn{
+    display: inline-block;
+    background: #c97f4a;;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 50px;
+    padding: 12px 25px;
+    font-size: 18px;
+    border-radius: 40px;
+    font-weight: 600;
+}
+
+.btn:hover{
+    background: #c36d30;
+}
+
+.hero-img{
+    flex: 1;
+    text-align: center;
+}
+
+.coffee-cup{
+    font-size: 180px;
+    animation: coffee 3s ease-in-out infinite;
+}
+
+@keyframes coffee {
+    0% {transform: translateY(0px);}
+    50% {transform: translateY(-20px);}
+    100% {transform: translateY(0px);}
+}
+
+.onas{
+    padding: 60px 0;
+    background: #473b3b;
+}
+
+.onas h2 .menu h2 .order h2{
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.onas-grid{
+    display: flex;
+    gap:30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.onas-card{
+    background: transparent;
+    padding: 30px;
+    border: 2px solid #746161;
+    border-radius: 20px;
+    box-shadow: 0 3px 6px rgb(26, 24, 24);
+    text-align: center;
+    flex: 1;
+    min-width: 200px;
+}
+
+.onas-icon{
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.menu{
+    padding: 60px 0;
+    background: #473b3b;
+    margin-top: 25px;
+}
+
+.menu-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.menu-card{
+    background: #615151;
+    border-radius: 20px;
+    padding: 25px;
+    text-align: center;
+}
+
+.coffe-emg{
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.menu-card h3{
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.price{
+    display: block;
+    font-size: 28px;
+    font-weight: bold;
+    color: #c97f4a;
+    margin: 15px 0;
+}   
+
+.menu-card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.order{
+    padding: 60px 0;
+    background: #473b3b;
+    margin-top: 25px;
+}
+
+.order-box{
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.contact-info{
+    flex: 1;
+    background: #615151;
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.contact-info a{
+    color: #c97f4a;
+    text-decoration: none;
+}
+
+.contact-info a:hover{
+    text-decoration: underline;
+}
+
+footer{
+    text-align: center;
+    padding: 30px 0;
+}
+
+@media (max-width: 768px){
+    .hero-text h1{
+        font-size: 32px;
+    }
+
+    .hero-container{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-container{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a{
+        margin: 0 15px;
+    }
+}
